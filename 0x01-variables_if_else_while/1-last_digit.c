@@ -1,14 +1,16 @@
 #include <stdlib.h>
 #include <time.h>
+#include <stdio.h>
 /* more headers goes there */
 
 /* betty style doc for function main goes there */
 int main(void)
 {
-int n, LastDigit;
-lastDigit = n % 10;
+int n;
+int LastDigit;
 srand(time(0));
 n = rand() - RAND_MAX / 2;
+LastDigit = n % 10;
 /* your code goes there */
 if (LastDigit > 5)
 {
