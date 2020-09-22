@@ -1,9 +1,9 @@
 #include "holberton.h"
 #include <stdio.h>
 /**
- * main - check the code for Holberton School students.
- *
- * Return: Always 0.
+ * print_sign - check number is positive, negative or zero
+ * @n: the character to be checked
+ * Return: 1 if lowercase, uppercase letter and 0 otherwise
  */
 int print_sign(int n)
 {
