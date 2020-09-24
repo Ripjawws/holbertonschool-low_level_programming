@@ -1,4 +1,3 @@
-#include "holberton.h"
 #include <stdio.h>
 /**
  *main - entry
@@ -24,7 +23,7 @@ printf("Buzz ");
 }
 else if (i == 100)
 {
-printf("Buzz");
+printf("Buzz ");
 }
 else
 {
