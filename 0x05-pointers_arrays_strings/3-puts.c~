@@ -1,0 +1,15 @@
+#include "holberton.h"
+
+/**
+ * _puts - use puts to print
+ *
+ * Return: nothing
+ */
+void _puts(char *str)
+{
+int c;
+
+for (c = 0; str[c] != '\0'; c++)
+_putchar(("%c", str[c]);
+_putchar('\n');
+}

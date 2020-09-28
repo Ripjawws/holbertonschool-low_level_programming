@@ -1,0 +1,1 @@
+Starting with pointers arrays and strings

@@ -1,0 +1,16 @@
+#include "holberton.h"
+
+/**
+ * swap_int - swap integers
+ * @a:swapping a for b
+ * @b: swapping b for a
+ **/
+
+void swap_int(int *a, int *b)
+{
+int swap;
+swap = *a;
+
+*a = *b;
+*b = swap;
+}
