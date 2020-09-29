@@ -1,0 +1,15 @@
+#include "holberton.h"
+
+/**
+ * main - check the code for Holberton School students.
+ *
+ * Return: Always 0.
+ */
+void print_rev(char *s)
+{
+int c = 0;
+
+for( c = s - 1; c >= 0; c--)
+_putchar(s[c]);
+_putchar('\n');
+}
