@@ -6,24 +6,20 @@
  */
 char *rot13(char *str)
 {
-	int i;
-	int j;
-	char from[] = "abcdefghijklmABCDEFGHIJKLM";
-	char to[] = "nopqrstuvwxyzNOPQRSTUVWXYZ";
+	int i, j, k;
+	char str[] = "ABCDEFGHIJKLMabcdefghijklmNOPQRSTUVWXYZnopqrstuvwxyz";
 
-	for (i = 0; str[i] != '\0'; i++)
+	for (i = 0; *(s + i) != '\0'; i++)
 	{
-		for (j = 0; from[j] != '\0'; j++)
+		for (j = 0; j < 52; j++)
 		{
-			if (str[i] == from[j])
+			if (*(s + i) == str[j])
 			{
-				str[i] = to[j];
-			}
-			else if (str[i] == to[j])
-			{
-				str[i] = from[j];
+				k = (j + 26) % 52;
+				*(s + i) = str[k];
+				j = 52;
 			}
 		}
 	}
-	return (str);
+	return (s);
 }
