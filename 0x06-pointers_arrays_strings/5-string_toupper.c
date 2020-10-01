@@ -1,8 +1,10 @@
 #include "holberton.h"
 /**
- * main - check the code for Holberton School students.
+ * string_toupper - Entry point
+ * Description: upcase on character.
+ * @s: string to be upcase
  *
- * Return: Always 0.
+ * Return: nothing
  */
 
 char *string_toupper(char *s)

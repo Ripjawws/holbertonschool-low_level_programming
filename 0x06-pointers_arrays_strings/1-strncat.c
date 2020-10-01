@@ -1,8 +1,12 @@
 #include "holberton.h"
 /**
- * main - check the code for Holberton School students.
+ * _strncat - Entry point
+ * Description: concatenate a string from source to destination.
+ * @dest: destination string.
+ * @src: source string.
+ * @n: number of bytes will be concat.
  *
- * Return: Always 0.
+ * Return: dest.
  */
 
 char *_strncat(char *dest, char *src, int n)

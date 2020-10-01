@@ -1,11 +1,13 @@
 #include "holberton.h"
 /**
- * main - check the code for Holberton School students.
- * @a: an array of integers
- * @n: the number of elements to swap
+ * reverse_array - Entry point
+ * Description: reverse element in an array.
+ * @a: array will be reversed
+ * @n: size of array
  *
- * Return: nothing.
+ * Return: nothing
  */
+
 void reverse_array(int *a, int n)
 {
 	int temp = 0;
