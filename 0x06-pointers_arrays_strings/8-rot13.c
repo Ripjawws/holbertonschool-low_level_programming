@@ -1,25 +1,26 @@
 #include "holberton.h"
 /**
- * rot13 - function that encodes a string using rot13
- * @str: character
- * Return: string in rot13
+ *rot13 - convertes string into rot13
+ *@s: s
+ *Return: s
  */
-char *rot13(char *str)
+char *rot13(char *s)
 {
-	int i, j, k;
-	char str[] = "ABCDEFGHIJKLMabcdefghijklmNOPQRSTUVWXYZnopqrstuvwxyz";
+	int i, j;
+	char alpha[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+	char rot[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
-	for (i = 0; *(s + i) != '\0'; i++)
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		for (j = 0; j < 52; j++)
+		for (j = 0; alpha[j] != '\0'; j++)
 		{
-			if (*(s + i) == str[j])
+			if (s[i] == alpha[j])
 			{
-				k = (j + 26) % 52;
-				*(s + i) = str[k];
-				j = 52;
+				s[i] = rot[j];
+				break;
 			}
 		}
 	}
+
 	return (s);
 }
