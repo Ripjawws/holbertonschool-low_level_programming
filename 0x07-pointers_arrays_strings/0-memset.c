@@ -2,10 +2,10 @@
 
 /**
  * _memset - fill with constant byte
- * @char *s: memory
+ * @s: memory
  * @b: with what to fill
- * @unsignedintn: value of how many
- * Return: Nothing.
+ * @n: value of how many
+ * Return: string
  */
 char *_memset(char *s, char b, unsigned int n)
 {
