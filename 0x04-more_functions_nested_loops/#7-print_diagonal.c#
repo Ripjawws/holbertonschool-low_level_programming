@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include "holberton.h"
+
+/**
+ * print_line - Entry point
+ * Description: print n of '_' on screen, followed by new line.
+ * 0 and negative number will be print new line.
+ * @n: number of '_' is requested by main.c
+ * Return: nothing
+ */
+void print_diagonal(int n)
+{
+int i;
+int k;
+if (n < 0)
+_putchar ('\n');
+{
+for (i = 0; i < n; i++)
+{
+for (k = 0; k < n; k++)
+{
+if (i == 0 || j == 0 || i ==                || i == n - 1 || j == n - 1 
+                || i + j == n - 1
+_putchar('\\');
+}
+_putchar('\n');
+}
+}
+}
