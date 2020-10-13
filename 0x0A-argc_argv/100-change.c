@@ -1,12 +1,16 @@
+#include <stdio.h>
 #include <stdlib.h>
+#include "holberton.h"
+
 /**
- *main -print the minimum number of coins to make change for an amount of money
- *@argc: argument counter
- *@argv: argument vector
- *Return: amount of cents you need to give back,
- *error if number of arguments
+ * main -print the minimum number of coins to make change for an amount of money
+ * @argc: argument counter
+ * @argv: argument vector
+ * Return: amount of cents you need to give back,
+ * error if number of arguments
  */
 int main(int argc, char *argv[])
+
 {
 	int count;
 	int num;
