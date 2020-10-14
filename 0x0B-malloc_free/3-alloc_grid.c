@@ -3,17 +3,14 @@
 #include <stdlib.h>
 
 /**
- * print_grid - prints a grid of integers
- * @grid: the address of the two dimensional grid
- * @width: width of the grid
- * @height: height of the grid
- *
- * Return: Nothing.
+ *alloc_grid - returns a 2d aray
+ *@width: width
+ *@height: height
+ *Return: array
  */
 
 int **alloc_grid(int width, int height)
 {
-
 	int **arr;
 	int i = 0;
 
@@ -25,16 +22,12 @@ int **alloc_grid(int width, int height)
 	{
 		return (NULL);
 	}
-
 	arr = malloc(height * sizeof(int *));
-
 	if (arr == 0)
 	{
 		return (NULL);
 	}
-
-	for (i=0; i < height; i++)
-
+	for (i = 0; i < height; i++)
 	{
 	arr[i] = malloc(width * sizeof(int));
 	if (arr[i] == NULL)
@@ -46,10 +39,6 @@ int **alloc_grid(int width, int height)
 		free(arr);
 		return (NULL);
 	}
-
-
 }
-
 	return (arr);
-
 }

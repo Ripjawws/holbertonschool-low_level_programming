@@ -34,9 +34,8 @@ char *_strdup(char *str)
 	}
 
 	for (len2 = 0; len2 < len1; len2++)
-
 	{
 		p[len2] = str[len2];
-         }
+	}
 	return (p);
 }
