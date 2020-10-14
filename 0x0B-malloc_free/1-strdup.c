@@ -2,10 +2,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+
 /**
- * main - check the code for Holberton School students.
- *
- * Return: Always 0.
+ *_strdup - a pointer to newly allocated space in memory with a copy of string
+ *@str: string
+ *Return: s
  */
 
 char *_strdup(char *str)
