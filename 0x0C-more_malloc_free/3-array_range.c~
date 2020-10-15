@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include "holberton.h"
+
+/**
+ * array_range - Entry Point
+ * Description: return a array of interger from min to max
+ * @min: minimum number.
+ * @max: maximum number
+ * Return: nothing
+ */
+int *array_range(int min, int max)
+{
