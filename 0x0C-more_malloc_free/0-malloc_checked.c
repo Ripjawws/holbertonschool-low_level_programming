@@ -4,10 +4,11 @@
 #include <limits.h>
 
 /**
- * main - check the code for Holberton School students.
- *
- * Return: Always 0.
+ *malloc_checked - allocates memory using malloc
+ *@b: b
+ *Return: pointer to memory
  */
+
 void *malloc_checked(unsigned int b)
 {
 	unsigned int *bob = 0;
@@ -19,7 +20,7 @@ void *malloc_checked(unsigned int b)
 	bob = malloc(b);
 	if (bob == 0)
 	{
-		exit (98);
+		exit(98);
 	}
 	return (bob);
 }
