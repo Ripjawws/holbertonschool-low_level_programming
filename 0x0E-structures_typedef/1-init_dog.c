@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 /**
- * init dog - initialize
+ *init_dog - initialize
  *@d: its a d
  *@name: the name
  *@age: the age
