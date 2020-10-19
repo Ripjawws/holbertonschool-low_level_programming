@@ -1,0 +1,6 @@
+#ifndef SECONDHEADER_H
+#define SECONDHEADER_H
+
+#define PI 3.14159265359
+
+#endif /* SECONDHEADER_H */
