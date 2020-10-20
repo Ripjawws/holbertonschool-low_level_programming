@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 /**
- * print dog - if its null print nill
+ *print_dog - if its null print nill
  *@d: struct pointer
  *
  */
