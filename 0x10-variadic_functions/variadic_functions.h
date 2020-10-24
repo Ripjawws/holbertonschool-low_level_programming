@@ -1,5 +1,19 @@
 #ifndef VARIADIC_H
 #define VARIADIC_H
+#include <stdarg.h>
+
+int _putchar(char c);
+/**
+ * struct pter - pointer to print all
+ * @test: pointer to input for test
+ * @printer: pointer to function
+ */
+typedef struct pter
+{
+	char *test;
+	void (*printer)();
+} pt;
+
 int sum_them_all(const unsigned int n, ...);
 void print_numbers(const char *separator, const unsigned int n, ...);
 void print_strings(const char *separator, const unsigned int n, ...);
