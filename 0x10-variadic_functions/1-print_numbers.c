@@ -3,16 +3,20 @@
 #include "variadic_functions.h"
 
 /**
- * main - check the code for Holberton School students.
+ * print_numbers - Entry point
+ * Description: print number follow by given format
+ * @separator: pointer to const char that contain separator(s) between numbers
+ * @n: numbers of arguments
+ * @...: elipses
  *
- * Return: Always 0.
+ * Return: nothings
  */
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
 	unsigned int i;
 	va_list list;
 
-	va_start (list, n);
+	va_start(list, n);
 
 	for (i = 0; i < n; i++)
 	{

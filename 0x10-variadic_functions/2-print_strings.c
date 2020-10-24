@@ -2,9 +2,13 @@
 #include <stdio.h>
 #include "variadic_functions.h"
 /**
- * main - check the code for Holberton School students.
+ * print_strings - Entry point
+ * Description: print strings follow by given format
+ * @separator: pointer to const char that contain separator(s) between numbers
+ * @n: numbers of arguments
+ * @...: elipses
  *
- * Return: Always 0.
+ * Return: nothings
  */
 void print_strings(const char *separator, const unsigned int n, ...)
 {
