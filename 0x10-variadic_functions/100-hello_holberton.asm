@@ -13,8 +13,8 @@
 
 	section .text
 
-	global _main
-_main:
+	global main
+main:
 	    mov rax, sys_write
 	    mov rdi, stdout
 	    mov rsi, message
