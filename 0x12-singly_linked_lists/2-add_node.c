@@ -22,6 +22,9 @@ list_t *add_node(list_t **head, const char *str)
 	{
 		return (NULL);
 	}
+
+	runner = 0;
+
         while (str[runner] != '\0')
 	{
 		runner++;
