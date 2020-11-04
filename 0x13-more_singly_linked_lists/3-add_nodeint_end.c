@@ -2,11 +2,12 @@
 #include <string.h>
 #include <stdio.h>
 #include "lists.h"
-
 /**
- * main - check the code for Holberton School students.
- *
- * Return: Always 0.
+ * add_nodeint_end - Entry point
+ * Description: add node at the end
+ * @head: pointer to pointer to a struct
+ * @n: member number in that node
+ * Return: new node
  */
 listint_t *add_nodeint_end(listint_t **head, const int n)
 {

@@ -4,10 +4,10 @@
 #include "lists.h"
 
 /**
- * free_list - Entry point
+ * free_listint - Entry point
  * Description: free list_t
  * @head: first node
- * Return: nothing
+ * Return: new node
  */
 void free_listint(listint_t *head)
 {

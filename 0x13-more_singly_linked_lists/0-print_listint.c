@@ -3,9 +3,10 @@
 #include <stdio.h>
 #include "lists.h"
 /**
- * main - check the code for Holberton School students.
- *
- * Return: Always 0.
+ * print_listint - Entry point
+ * Description: print all element in the list
+ * @h: pointer to struct
+ * Return: number of node.
  */
 size_t print_listint(const listint_t *h)
 {
