@@ -16,13 +16,15 @@ unsigned int count(unsigned int a)
 	}
 	return (counter);
 }
+
 /**
  *flip_bits - flip bits
  *@n: n
  *@m: m
  *Return: number of bits
  */
+
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
-        return (count(n ^ m));
+	return (count(n ^ m));
 }
