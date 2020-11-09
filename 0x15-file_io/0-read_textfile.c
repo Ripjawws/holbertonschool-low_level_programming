@@ -1,12 +1,12 @@
-#include <stdio.h>
-#include <stdlib.h>
 #include "holberton.h"
 
 /**
- * main - check the code for Holberton School students.
- *
- * Return: Always 0.
+ *read_textfile - read a file
+ *@filename: filename
+ *@letters: letters
+ *Return: number of letters
  */
+
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	int fd;
