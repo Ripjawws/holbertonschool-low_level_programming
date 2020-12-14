@@ -9,13 +9,13 @@
  */
 size_t dlistint_len(const dlistint_t *h)
 {
-    unsigned int i;
-    
-    i = 0;
-    while (h)
-    {
-        h = h->next;
-        i++;      
-     }
-      return(i);
+	unsigned int i;
+
+	i = 0;
+	while (h)
+	{
+		h = h->next;
+		i++;
+	}
+	return (i);
 }
