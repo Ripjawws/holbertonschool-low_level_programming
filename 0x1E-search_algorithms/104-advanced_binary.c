@@ -23,23 +23,23 @@ int bs_help(int *array, size_t size, int value,
 	for (i = first; i < last; i++)
 		printf("%d, ", array[i]);
 	printf("%d\n", array[i]);
-	if (first == last)
+	if (last - first <= 1)
 	{
 		if (array[first] == value)
 			return (first);
+		if (array[last] == value)
+			return (last);
 		return (-1);
 	}
-	if (value == array[(last + first) / 2])
-		return ((last + first) / 2);
-	if (value < array[(last + first) / 2])
+	if (value <= array[(last + first) / 2])
 		return (bs_help(array, size, value, first,
-				(last + first) / 2 - 1));
+				(last + first) / 2));
 	return (bs_help(array, size, value, ((last + first) / 2) + 1,
 			last));
 }
 
 /**
- * binary_search - Entry point
+ * advanced_binary - Entry point
  * Description: searches for a value in a sorted array of integers
  * using the Binary search algo
  * @array: array of intergers
@@ -48,7 +48,7 @@ int bs_help(int *array, size_t size, int value,
  * Return: position of value or -1 if not found
  */
 
-int binary_search(int *array, size_t size, int value)
+int advanced_binary(int *array, size_t size, int value)
 {
 	size_t first = 0;
 	size_t last = size - 1;
